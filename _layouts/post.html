@@ -30,9 +30,21 @@ layout: base
     {{ content }}
   </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+  <script src="https://giscus.app/client.js"
+    data-repo="MayaL1M/MayaL1M.github.io"
+    data-repo-id="R_kgDOMhN0aQ"
+    data-category="Comment"
+    data-category-id="DIC_kwDOMhN0ac4Chwbi"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="0"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="noborder_light"
+    data-lang="ko"
+    crossorigin="anonymous"
+    async>
+  </script>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
